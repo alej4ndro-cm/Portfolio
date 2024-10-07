@@ -1,9 +1,9 @@
-# Portofolio
+# 🎨 Portfolio
 
-# My Portfolio Website
+# 🌟 My Portfolio Website
 
 This repository contains the source code for my personal portfolio website, accessible at [alejandrodev.io](https://alejandrodev.io).
 
-## About
+## 📖 About
 
-This website showcases my projects, skills, and experience as a developer.
+This website showcases my projects, skills, and experience as a developer. 💻✨

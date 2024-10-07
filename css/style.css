@@ -441,6 +441,17 @@ span {
   padding-top: 0.5rem;
 }
 
+.education-content ul {
+  padding-left: 2rem; /* Shifts the entire list to the right */
+}
+
+.education-content ul li {
+  font-size: 1.8rem; /* Adjust this if needed */
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  list-style-position: inside; /* Makes sure the bullet stays within the padding */
+}
+
 .skills {
   min-height: auto;
   padding-bottom: 7rem;
@@ -456,11 +467,14 @@ span {
 .skills .skills-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 5rem;
+  justify-content: space-between;
+  gap: 2rem;
 }
 
 .skills-row .skills-column {
-  flex: 1 1 40rem;
+  flex: 1 1 48%;
+  min-width: 25rem;
+  margin-bottom: 2rem;
 }
 
 .skills-column .title {
@@ -528,36 +542,48 @@ span {
   background: var(--main-color);
 }
 
+/* Web Development */
 .skills-column:nth-child(1) .skills-content .progress:nth-child(1) .bar span {
-  width: 90%;
+  width: 50%; /* HTML5 */
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(2) .bar span {
-  width: 80%;
+  width: 50%; /* CSS3 */
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(3) .bar span {
-  width: 65%;
+  width: 50%; /* JavaScript */
 }
 
 .skills-column:nth-child(1) .skills-content .progress:nth-child(4) .bar span {
-  width: 75%;
+  width: 85%; /* Python */
 }
 
-.skills-column:nth-child(2) .skills-content .progress:nth-child(1) .bar span {
-  width: 95%;
+.skills-column:nth-child(1) .skills-content .progress:nth-child(5) .bar span {
+  width: 35%; /* RESTful APIs */
 }
 
-.skills-column:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
-  width: 67%;
+/* Cloud */
+.skills-column:nth-child(2) .skills-content .progress .bar span {
+  width: 45%; /* AWS Services */
 }
 
-.skills-column:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
-  width: 85%;
+/* DevOps / CI */
+.skills-column:nth-child(3) .skills-content .progress:nth-child(1) .bar span {
+  width: 30%; /* Jenkins */
 }
 
-.skills-column:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
-  width: 60%;
+.skills-column:nth-child(3) .skills-content .progress:nth-child(2) .bar span {
+  width: 25%; /* Jenkins Continuous Integration */
+}
+
+/* Databases */
+.skills-column:nth-child(4) .skills-content .progress:nth-child(1) .bar span {
+  width: 25%; /* mySQL */
+}
+
+.skills-column:nth-child(4) .skills-content .progress:nth-child(2) .bar span {
+  width: 25%; /* Cassandra */
 }
 
 .contact {
