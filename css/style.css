@@ -576,7 +576,7 @@ span {
   .progress:nth-child(1)
   .bar
   span {
-  width: 30%; /* Jenkins */
+  width: 25%; /* GitHub Actions */
 }
 .skills-column:nth-child(2)
   .skills-box:nth-child(1)
